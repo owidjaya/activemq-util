@@ -1,0 +1,33 @@
+# Spring properties
+spring:
+  application:
+    name: message-transfer-service
+  jackson:
+    serialization: 
+      WRITE_DATES_AS_TIMESTAMPS: false
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+  main:
+    web-application-type: NONE
+camel:
+  springboot:
+    main-run-controller: true
+    shutdown-timeout: 10
+
+#logging:
+#  level:
+#    root: DEBUG
+
+transfer:
+  from:
+    broker-url: tcp://localhost:61617
+    username: admin
+    password: admin
+    broker-uri: "activemq:queue:to.queue?connectionFactory=fromJmsConnectionFactory"
+    file-uri: "file:.?fileName=membership"
+
+  to:
+    broker-url: tcp://localhost:61617
+    username: admin
+    password: admin
+    broker-uri: "activemq:queue:to.queue?connectionFactory=toJmsConnectionFactory&acknowledgementModeName=AUTO_ACKNOWLEDGE"
+    file-uri: "file:output?fileName=membership&fileExist=Append"
