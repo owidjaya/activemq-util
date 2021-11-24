@@ -31,9 +31,6 @@ public class MyRouteBuilder extends RouteBuilder {
             .autoStartup(false)
             .log("${body}")
             .to(toQUri)
-            .onCompletion()
-            .to("direct:shutdown")
-            .end()
         ;
 
         from(fromFileUri)

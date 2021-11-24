@@ -12,5 +12,5 @@ Available `<COMMAND>`s:
 2. QUEUE_TO_FILE: this will ingest the queue to put in to a file as configured
 3. QUEUE_TO_QUEUE: this will move messages from one broker to another 
 
-Caveat:
-currently the QUEUE_TO_FILE needs to be Ctrl+c at the end to disconnect. 
+**Caveat**:
+currently the QUEUE_TO_FILE and QUEUE_TO_QUEUE needs to be Ctrl+c at the end to disconnect.
