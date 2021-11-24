@@ -1,0 +1,15 @@
+/target/
+/~.mv.db
+.idea
+.settings
+.project
+.classpath
+ods-service.log
+build/
+*.iml
+.springBeans
+.gradle/
+*.hprof
+*.log*
+*trace.db
+src/main/resources/application.yml
