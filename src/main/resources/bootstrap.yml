@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: nrt-ods-service
-  main:
-    web-application-type: NONE

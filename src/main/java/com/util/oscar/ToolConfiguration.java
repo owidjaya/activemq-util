@@ -1,4 +1,4 @@
-package com.bcaa.oscar;
+package com.util.oscar;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.camel.component.jms.JmsComponent;

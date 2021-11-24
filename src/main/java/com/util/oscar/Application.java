@@ -1,4 +1,4 @@
-package com.bcaa.oscar;
+package com.util.oscar;
 
 import org.apache.camel.CamelContext;
 import org.slf4j.Logger;

@@ -13,3 +13,5 @@ build/
 *.log*
 *trace.db
 src/main/resources/application.yml
+.camel
+application.yml
